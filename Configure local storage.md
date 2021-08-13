@@ -6,7 +6,7 @@ Configure local storage
 - Create and remove physical volumes
 - Assign physical volumes to volume groups
 - Create and delete logical volumes
-- Configure systems to mount file systems at boot by universally unique ID (UUID) or label
+- 
 - Add new partitions and logical volumes, and swap to a system non-destructively
 
 
@@ -23,6 +23,8 @@ Configure local storage
 | gdisk -d                           | Delete a partition (GPT partition scheme (UEFI))             |
 |                                    |                                                              |
 |                                                            |
+|**Configure systems to mount file systems at boot by universally unique ID (UUID) or label**||
+|------------------------------------|--------------------------------------------------------------|
 | **Mount**                          |                                                              |
 | Mount -t ext4 /dev/sdb1 /media/usb | Mounting device /dev/sdb1 to /media/usb                      |
 | /etc/fstab                         | For automatic mounting drives when the system boots          |

@@ -2,10 +2,10 @@ Deploy, configure, and maintain systems
 
 # Deploy, configure, and maintain systems
 
-- Schedule tasks using at and cron
+- 
 - Start and stop services and configure services to start automatically at boot
 - Configure systems to boot into a specific target automatically
-- Configure time service clients
+- 
 - Install and update software packages from Red Hat Network, a remote repository, or from the local file system
 - Work with package module streams
 - Modify the system bootloader
@@ -71,7 +71,8 @@ Process:
 | modprobe \<module name\>   | Install a module (can find it in /lib/modules) + all the dependencies |
 | modpobe -r \<module name\> | Removes the module                                           |
 
-
+|**Schedule tasks using at and cron**||
+| ---------------------------------------------------------- | ------------------------------------------------------------ |
 | **Cronjob**                                                | **Runs a command regularly and repeatedly at a given time**  |
 | ---------------------------------------------------------- | ------------------------------------------------------------ |
 | Crontab -l                                                 | Show all the cronjobs from the current user                  |
@@ -136,7 +137,7 @@ Process:
 | Yum clean all   | Reload the cache        |
 |                 |                         |
 
-| **Date / time**                                          |                                                             |
+| **Configure time service clients**                       |                                                             |
 | -------------------------------------------------------- | ----------------------------------------------------------- |
 | Date                                                     | Showing the current date / time                             |
 | Sudo mv /etc/localtime /etc/localtime.bak                | Removing the original timezone                              |

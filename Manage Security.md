@@ -48,7 +48,6 @@ Manage Security
 | ~/.ssh/authorized_keys                      | Location where it stores it authorised keys               |
 |                                             |                                                           |
 | **Key-Based Authentication SSH**                             |                                                     |
-
 | Ssh-keygen -t rsa -b 4096                                    | Creating a key pair (private and public) in the root folder ~/.ssh |
 | Ssh folder 700                                               |                                                              |
 | Contents in ssh folder 600                                   |                                                              |

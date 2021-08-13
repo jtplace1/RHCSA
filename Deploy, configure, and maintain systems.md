@@ -136,3 +136,49 @@ Process:
 | Yum clean all   | Reload the cache        |
 |                 |                         |
 
+| **Date / time**                                          |                                                             |
+| -------------------------------------------------------- | ----------------------------------------------------------- |
+| Date                                                     | Showing the current date / time                             |
+| Sudo mv /etc/localtime /etc/localtime.bak                | Removing the original timezone                              |
+| Sudo ln -s /usr/share/zoneinfo/US/Pacific /etc/localtime | Creating a symlink to the current time                      |
+|                                                          |                                                             |
+| hwclock                                                  | Changing the hardware clock in the BIOS                     |
+| Hwclock —hctosys                                         | Synch hardware clock from the system clock                  |
+| Hwclock —systohc                                         | Synch system clock from the hardware clock                  |
+| Date +”%A, %B %d %Y”                                     | Changing the date /time to Day, Month, numeric day and year |
+| Timedatectl                                              | Showing all the information including hardware clock (RTC)  |
+| Timedatectl set-time “2018-08-02 06:15:00”               | Setting the time                                            |
+| Tzconfig (old) -> dpkg-reconfigure tzdata (in ubuntu)    | Change Timezone (gui based)                                 |
+
+
+
+| **Pgrep**            | Ps + grep command                                            |
+| -------------------- | ------------------------------------------------------------ |
+| Pgrep -u root        | Showing all the process that are runned by root              |
+| Pgrep -U \<user id\> | Showing all the process that are runned by a specific user, to show which UID a user has: id <name user> |
+|                      |                                                              |
+|                      |                                                              |
+
+| /lib/systemd/system              | Folder where systemd stores the unit configurations  |
+| -------------------------------- | ---------------------------------------------------- |
+| .service .mount .device. .socket | Unit files fore systemd                              |
+| Systemctl deamon-reload          | Reload the systemctl deamon if there are any changes |
+| /sys/bus/usb/devices             | Folder where usb information has been stored         |
+| /etc/udev/rules.d                | Location where udev rules are stored                 |
+| Fsck                             | Check filesystem if there are no bad sectors etc.    |
+| /etc/init.d                      | Scripts for starting and stopping services for SysV  |
+| Systemd-delta                    | Show overwritten config files                        |
+
+| **Upstart**    |                                         |
+| -------------- | --------------------------------------- |
+| Initctl reload | Reloading the configfiles for upstart   |
+| Initctl list   | Showing all the running upstart scripts |
+|                |                                         |
+
+| /proc/mdstat | Information about RAID configs |
+| ------------ | ------------------------------ |
+|              |                                |
+
+
+  
+  

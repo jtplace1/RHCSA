@@ -1,12 +1,7 @@
-Deploy, configure, and maintain systems
 
 # Deploy, configure, and maintain systems
-
-- 
-- 
+ 
 - Configure systems to boot into a specific target automatically
-- 
-- 
 - Work with package module streams
 - Modify the system bootloader
 

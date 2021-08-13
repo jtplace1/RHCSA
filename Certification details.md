@@ -21,29 +21,3 @@ A Red Hat® Certified System Administrator (RHCSA) is able to perform the follow
 
 As with all Red Hat performance-based exams, configurations must persist after reboot without intervention.
 
-id: effdc2033c844e20ad641a3c963b214e
-parent_id: 3c240cf25d284d35a70da82bc0bf33e6
-created_time: 2021-07-10T16:50:53.301Z
-updated_time: 2021-07-10T17:06:54.176Z
-is_conflict: 0
-latitude: 33.94020000
-longitude: -84.53950000
-altitude: 0.0000
-author: 
-source_url: 
-is_todo: 0
-todo_due: 0
-todo_completed: 0
-source: joplin-desktop
-source_application: net.cozic.joplin-desktop
-application_data: 
-order: 1625935853301
-user_created_time: 2021-07-10T16:50:53.301Z
-user_updated_time: 2021-07-10T17:06:54.176Z
-encryption_cipher_text: 
-encryption_applied: 0
-markup_language: 1
-is_shared: 0
-share_id: 
-conflict_original_id: 
-type_: 1

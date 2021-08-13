@@ -62,8 +62,10 @@ Understand and use essential tools
 | ------------------------ | ------------------------------------------------------------ |
 | \<keyword\>$ bijv: test$ | Matches and of the the string                                |
 | ^\<keyword\> bijv: ^test | Matches start of string and represents characters not in the string. |
-| [a-z ]                   | Matches on the string                                        |
-|                          |                                                              |
+| [a-z ]     [0-9]               | Matches on range                                       |
+|   ?                       |                 match any single charachter                                             |
+|[abc]|match any one of the charachters in the list, case sensitive.|
+|[^abc]|matches any one charachter except those in the list case sensitve|
 
 
 
@@ -120,6 +122,7 @@ Understand and use essential tools
 - Create and edit text files
 	- vim
 	- touch
+
 | **Sed (change words)**       					|	                                |
 | -----------------------------------  | ------------------------------- |
 | Sed ’s/parttime/fulltime/‘ team      | Change every word from parttime to fulltime (s stands for substitution ofwel vervangen) (display it, not changing the original file) |

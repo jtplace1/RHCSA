@@ -55,10 +55,9 @@ Understand and use essential tools
 | Egrep -I ‘hello\|world’ \<filename\>     | -I : ignore case sensitive ‘hello.*world’: hello or world in it |
 | Egrep -v ‘hello\|world’ \<filename\>     | -v: everything that does not contain hello or world in it    |
 | **Fgrep (Fixed, same as Grep -f)**       |                                                              |
-|                                          |                                                              |
-|                                          |                                                              |
 
- **Regular Expressions**  |                                                              |
+
+**Regular Expressions**  |                                                              |
 | ------------------------ | ------------------------------------------------------------ |
 | \<keyword\>$ bijv: test$ | Matches and of the the string                                |
 | ^\<keyword\> bijv: ^test | Matches start of string and represents characters not in the string. |
@@ -71,9 +70,7 @@ Understand and use essential tools
 
 
 
-- Access remote systems using SSH
-
-| **SSH**                                     |                                                           |
+| **Access remote systems using SSH**         |                                                           |
 | ------------------------------------------- | --------------------------------------------------------- |
 | Ssh -I \<identity file\>                    |                                                           |
 | Ssh -X \<ip address\>                       | Connecting to a remote ssh server with GUI / Terminal Gun |
@@ -86,8 +83,8 @@ Understand and use essential tools
 | ~/.ssh/authorized_keys                      | Location where it stores it authorised keys               |
 |                                             |                                                           |
 
-| **Key-Based Authentication SSH**                             |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Key-Based Authentication SSH**                             |                                                     |
+
 | Ssh-keygen -t rsa -b 4096                                    | Creating a key pair (private and public) in the root folder ~/.ssh |
 | Ssh folder 700                                               |                                                              |
 | Contents in ssh folder 600                                   |                                                              |
@@ -100,6 +97,7 @@ Understand and use essential tools
 	- scp
 	- sftp
 - Log in and switch users in multiuser targets
+-
 - Archive, compress, unpack, and uncompress files using tar, star, gzip, and bzip2
 
 | **TAR**                |                                                              |
@@ -146,9 +144,8 @@ Understand and use essential tools
 	- rmdir
 	- which
 	- ~
-- Create hard and soft links
 
-| **Hardlink / Symbolic link**     |                                     |
+| **Create hard and soft links**     |                                     |
 | -------------------------------- | ----------------------------------- |
 | Ln [filename] [hardlink]         | Creating a hardlink                 |
 | Ln -s [filename] [symbolic link] | Creating a softlink / symbolic link |

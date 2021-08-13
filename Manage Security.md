@@ -2,10 +2,7 @@ Manage Security
 
 # Manage Security
 
-- 
 - Create and use file access control lists
-- 
-- Set enforcing and permissive modes for SELinux
 - List and identify SELinux file and process context
 - Restore default file contexts
 - Use boolean settings to modify system SELinux settings
@@ -30,7 +27,7 @@ Manage Security
 | yum install selinux-policy-doc                       |                                         |
 |                                                      |                                         |
 
-| **Selinux**  |                            |
+| **Set enforcing and permissive modes for SELinux**  |                            |
 | ------------ | -------------------------- |
 | sestatus     | Show the status of selinux |
 | Setenforce 0 | Set selinux to permissive  |

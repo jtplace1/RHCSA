@@ -13,6 +13,17 @@ Create and configure file systems
 
 
 
+| **Folders** |                                                              |
+| ----------- | ------------------------------------------------------------ |
+| /etc/       | Config files                                                 |
+| /var/       | Files that frequent change                                   |
+| /dev/       | Device file location                                         |
+| /proc/      | Provides all the info about the processes (Virtual)          |
+| /sys        | Stores all the modifications to devices (Virtual)            |
+| /lib/       | Stores al the binaries files                                 |
+| /usr/       | all system-wide, read-only files installed by (or provided by) the OS |
+
+
 
 | **EXT**                                         |                                                              |
 | ----------------------------------------------- | ------------------------------------------------------------ |

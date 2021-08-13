@@ -24,13 +24,10 @@ Configure local storage
 |                                    |                                                              |
 |                                                            |
 |**Configure systems to mount file systems at boot by universally unique ID (UUID) or label**||
-|------------------------------------|--------------------------------------------------------------|
 | **Mount**                          |                                                              |
 | Mount -t ext4 /dev/sdb1 /media/usb | Mounting device /dev/sdb1 to /media/usb                      |
 | /etc/fstab                         | For automatic mounting drives when the system boots          |
 | /etc/mtab                          | Showing all the current mounted volumes                      |
-|                                    |                                                              |
-
 | **Mounting** |                                                              |
 | ------------ | ------------------------------------------------------------ |
 | Mount        | Show all the current mounts                                  |

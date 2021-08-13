@@ -4,7 +4,7 @@ Manage Security
 
 - 
 - Create and use file access control lists
-- Configure key-based authentication for SSH
+- 
 - Set enforcing and permissive modes for SELinux
 - List and identify SELinux file and process context
 - Restore default file contexts
@@ -37,7 +37,7 @@ Manage Security
 | Setenforce 1 | Set selinux to enforced    |
 |              |                            |
 
-| **Key-Based Authentication SSH**                             |                                                     |
+| **Configure key-based authentication for SSH**                             |                                                     |
 | ------------------------------------------- | --------------------------------------------------------- |
 | Ssh-keygen -t rsa -b 4096                                    | Creating a key pair (private and public) in the root folder ~/.ssh |
 | Ssh folder 700                                               |                                                              |

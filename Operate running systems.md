@@ -107,3 +107,16 @@ Grant user as sudo user -> visudo
 
 
 
+
+| **Journald Log persistant**                                  |                               |
+| ------------------------------------------------------------ | ----------------------------- |
+| Mkdir -p /var/log/journal                                    |                               |
+| vi  [/etc/systemd/journald.conf](https://www.freedesktop.org/software/systemd/man/journald.conf.html) | Edit the journald config file |
+| #Storage=auto -> Storage=persistent                          |                               |
+| systemctl restart systemd-journald                           | Restart the journald config   |
+|                                                              |                               |
+
+
+
+
+

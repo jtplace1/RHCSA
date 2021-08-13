@@ -3,10 +3,10 @@ Deploy, configure, and maintain systems
 # Deploy, configure, and maintain systems
 
 - 
-- Start and stop services and configure services to start automatically at boot
+- 
 - Configure systems to boot into a specific target automatically
 - 
-- Install and update software packages from Red Hat Network, a remote repository, or from the local file system
+- 
 - Work with package module streams
 - Modify the system bootloader
 
@@ -71,10 +71,11 @@ Process:
 | modprobe \<module name\>   | Install a module (can find it in /lib/modules) + all the dependencies |
 | modpobe -r \<module name\> | Removes the module                                           |
 
+
+
 |**Schedule tasks using at and cron**||
 | ---------------------------------------------------------- | ------------------------------------------------------------ |
 | **Cronjob**                                                | **Runs a command regularly and repeatedly at a given time**  |
-| ---------------------------------------------------------- | ------------------------------------------------------------ |
 | Crontab -l                                                 | Show all the cronjobs from the current user                  |
 | Crontab -e                                                 |                                                              |
 | Minute - hour - day of the month - month - day of the week |                                                              |
@@ -83,9 +84,7 @@ Process:
 |                                                            | If both files exist then /etc/cron.allow takes precedence. Which means that /etc/cron.deny is not considered and your user must be listed in /etc/cron.allow in order to be able to use the crontab. |
 | /var/spool/cron                                            | User specific cron jobs are stored here                      |
 |                                                            | Minutes 0-59 Hours 0-23 Days of month 0-31 Months 1-12 Days of week 0-7 command with options and parameters |
-
 | **At**             | **Runs commands once at a given time**          |
-| ------------------ | ----------------------------------------------- |
 | Atq or at -l       | Showing al the job at jobs                      |
 | Atrm <job number>  | Delete a at job                                 |
 | At -d <job number> | Delete a at job                                 |
@@ -97,7 +96,7 @@ Process:
 
 
 
-| **Services**                             |                                                             |
+| **Start and stop services and configure services to start automatically at boot**                             |                                                             |
 | ---------------------------------------- | ----------------------------------------------------------- |
 | SysV                                     | /etc/init.d                                                 |
 | /etc/inittab                             | SysV uses this configfile                                   |
@@ -112,7 +111,7 @@ Process:
 
 
 
-| **Packages**                       |                                                              |
+| **Install and update software packages from Red Hat Network, a remote repository, or from the local file system**                       |                                                              |
 | ---------------------------------- | ------------------------------------------------------------ |
 | Yum info nmap                      | Show info about a package                                    |
 | Yum list \| less                   | Show all the installed packages                              |
@@ -122,16 +121,12 @@ Process:
 | Yum history                        | Show which packages you installed en when                    |
 | Yum history undo \<number\>        | Undo the action that take place (show info through yum history) |
 |                                    |                                                              |
-
 | **Modules**             |                                               |
-| ----------------------- | --------------------------------------------- |
 | lsmod                   | Show all the modules currently running        |
 | modinfo \<module name\> | Show info about a module                      |
 | /etc/modprobe.d/        | Directory for the config files of the modules |
 |                         |                                               |
-
 | **Custom Repo** |                         |
-| --------------- | ----------------------- |
 | Yum repolist    | Update the repositories |
 |                 |                         |
 | Yum clean all   | Reload the cache        |

@@ -36,3 +36,11 @@ Manage Security
 | Setenforce 0 | Set selinux to permissive  |
 | Setenforce 1 | Set selinux to enforced    |
 |              |                            |
+
+| **Key-Based Authentication SSH**                             |                                                     |
+| ------------------------------------------- | --------------------------------------------------------- |
+| Ssh-keygen -t rsa -b 4096                                    | Creating a key pair (private and public) in the root folder ~/.ssh |
+| Ssh folder 700                                               |                                                              |
+| Contents in ssh folder 600                                   |                                                              |
+| Ssh-copy-id [root@192.168.82.128](mailto:root@192.168.82.128) | Copy the public key to a different host                      |
+

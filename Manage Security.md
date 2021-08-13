@@ -2,7 +2,7 @@ Manage Security
 
 # Manage Security
 
-- Configure firewall settings using firewall-cmd/firewalld
+- 
 - Create and use file access control lists
 - Configure key-based authentication for SSH
 - Set enforcing and permissive modes for SELinux
@@ -11,7 +11,7 @@ Manage Security
 - Use boolean settings to modify system SELinux settings
 - Diagnose and address routine SELinux policy violations
 
-| **Firewalld**                             |                                                         |
+| **Configure firewall settings using firewall-cmd/firewalld**                             |                                                         |
 | ----------------------------------------- | ------------------------------------------------------- |
 | Firewall-cmd —add-service=http —permanent | Add a service                                           |
 | firewall-cmd —add-port=80/tcp —permanent  | Add a port                                              |

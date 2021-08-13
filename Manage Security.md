@@ -20,3 +20,13 @@ Manage Security
 | firewall-cmd —list-ports                  | Show all the ports that are been enabled                |
 | Systemctl status firewalld.service        | Show the status of the firewall Deamon                  |
 
+
+| **Selinux**                                          |                                         |
+| ---------------------------------------------------- | --------------------------------------- |
+| Semanage port -l                                     | List of all the ports                   |
+| semanage port -a -t http_port_t -p tcp 90            | Change the default http port to port 90 |
+| Getsebool -a                                         |                                         |
+| Setsebool -P \<boolean name\> (from getsebool) on/of |                                         |
+| yum install selinux-policy-doc                       |                                         |
+|                                                      |                                         |
+

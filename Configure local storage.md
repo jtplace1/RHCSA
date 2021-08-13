@@ -36,8 +36,8 @@ Configure local storage
 | Df -Th       | Show all available disk space with the system mounts (including the filesystem) |
 |              |                                                              |
 
-|**Add new partitions and logical volumes, and swap to a system non-destructively**
-||
+
+|**Add new partitions and logical volumes, and swap to a system non-destructively** ||
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **Swap**                                                     |                                                              |
 | First create a LV disk that you want to enable for swap with Lvcreate ! |                                                              |

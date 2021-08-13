@@ -2,15 +2,14 @@ Configure local storage
 
 # Configure local storage
 
- - List, create, delete partitions on MBR and GPT disks
+ - 
 - Create and remove physical volumes
 - Assign physical volumes to volume groups
 - Create and delete logical volumes
-- 
 - Add new partitions and logical volumes, and swap to a system non-destructively
 
 
-| **Storage**                        |                                                              |
+| **List, create, delete partitions on MBR and GPT disks**                        |                                                              |
 | ---------------------------------- | ------------------------------------------------------------ |
 | Df -h                              | Show info about the file system (total space and available space) |
 | Df -hT                             | Show info about the file system (total space and available space) and the filesystem type |
@@ -45,7 +44,7 @@ Configure local storage
 | Free -m                                                      | Showing how many swap space there is before                  |
 | Swapon /dev/vdb1                                             | Enable the swap partition                                    |
 | Free -m                                                      | Showing how many swap space there is now                     |
-| /etc/fstab <br />![image-20210123122425808](images/RHCSA8_notes/image-20210123122425808.png) | Enable to the /etc/fstab                                     |
+| /etc/fstab <br />!| Enable to the /etc/fstab                                     |
 | Mount -a                                                     |                                                              |
 | Ls -l /dev/mapper                                            | Dm-0 etc. should be the names corresponding to the output of swapon -s |
 

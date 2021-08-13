@@ -29,6 +29,14 @@ Configure local storage
 | /etc/mtab                          | Showing all the current mounted volumes                      |
 |                                    |                                                              |
 
+| **Mounting** |                                                              |
+| ------------ | ------------------------------------------------------------ |
+| Mount        | Show all the current mounts                                  |
+| findmnt      | Show all the current mounts with its relations               |
+| Df -Th       | Show all available disk space with the system mounts (including the filesystem) |
+|              |                                                              |
+
+
 | **Swap**                                                     |                                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | First create a LV disk that you want to enable for swap with Lvcreate ! |                                                              |

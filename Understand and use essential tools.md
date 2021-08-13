@@ -196,30 +196,3 @@ Understand and use essential tools
 |                      |                                                        |
 
 
-
-id: b4253b5285044bd987818409d8c2dcb4
-parent_id: 3c240cf25d284d35a70da82bc0bf33e6
-created_time: 2021-06-30T02:15:14.862Z
-updated_time: 2021-08-12T19:07:04.745Z
-is_conflict: 0
-latitude: 33.94020000
-longitude: -84.53950000
-altitude: 0.0000
-author: 
-source_url: 
-is_todo: 1
-todo_due: 0
-todo_completed: 0
-source: joplin-desktop
-source_application: net.cozic.joplin-desktop
-application_data: 
-order: 1625936196966
-user_created_time: 2021-06-30T02:15:14.862Z
-user_updated_time: 2021-08-12T19:07:04.745Z
-encryption_cipher_text: 
-encryption_applied: 0
-markup_language: 1
-is_shared: 0
-share_id: 
-conflict_original_id: 
-type_: 1

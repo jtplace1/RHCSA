@@ -55,3 +55,8 @@ Create and configure file systems
 || Vi /etc/auto.home                                            |
 
 
+| **Extend filesystem**                  |                                |
+| -------------------------------------- | ------------------------------ |
+| Lvextend -L +1GB /dev/vg_disk/lv_disk3 | Extend the filesystem with 1GB |
+| resize2fs /dev/vg_disk/lv_disk         | Resize the filesystem          |
+

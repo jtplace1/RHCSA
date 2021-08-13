@@ -11,6 +11,10 @@
 
 Useful commands 
 
+diff
+df --total -h
+
+
 ls -lR
 
 cp -vR

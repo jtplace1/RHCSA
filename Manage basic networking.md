@@ -73,29 +73,3 @@ Manage basic networking
 | Nmcli dev show \<NICname\> | Show status of a interface                                   |
 | Dhclient                   | Refresh the dhcp client to get a new ipaddress               |
 
-id: de1fd3be0afb463b84236f8fd9e518e5
-parent_id: 3c240cf25d284d35a70da82bc0bf33e6
-created_time: 2021-07-10T16:55:28.556Z
-updated_time: 2021-08-09T17:51:31.650Z
-is_conflict: 0
-latitude: 33.94020000
-longitude: -84.53950000
-altitude: 0.0000
-author: 
-source_url: 
-is_todo: 1
-todo_due: 0
-todo_completed: 0
-source: joplin-desktop
-source_application: net.cozic.joplin-desktop
-application_data: 
-order: 1625936185746.4688
-user_created_time: 2021-07-10T16:55:28.556Z
-user_updated_time: 2021-08-09T17:51:31.650Z
-encryption_cipher_text: 
-encryption_applied: 0
-markup_language: 1
-is_shared: 0
-share_id: 
-conflict_original_id: 
-type_: 1

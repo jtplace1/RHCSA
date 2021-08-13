@@ -122,3 +122,17 @@ Process:
 | Yum history undo \<number\>        | Undo the action that take place (show info through yum history) |
 |                                    |                                                              |
 
+| **Modules**             |                                               |
+| ----------------------- | --------------------------------------------- |
+| lsmod                   | Show all the modules currently running        |
+| modinfo \<module name\> | Show info about a module                      |
+| /etc/modprobe.d/        | Directory for the config files of the modules |
+|                         |                                               |
+
+| **Custom Repo** |                         |
+| --------------- | ----------------------- |
+| Yum repolist    | Update the repositories |
+|                 |                         |
+| Yum clean all   | Reload the cache        |
+|                 |                         |
+

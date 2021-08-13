@@ -49,3 +49,21 @@ Configure local storage
 | /etc/fstab <br />![image-20210123122425808](images/RHCSA8_notes/image-20210123122425808.png) | Enable to the /etc/fstab                                     |
 | Mount -a                                                     |                                                              |
 | Ls -l /dev/mapper                                            | Dm-0 etc. should be the names corresponding to the output of swapon -s |
+
+| **Volumes Show** |                       |
+| ---------------- | --------------------- |
+| Pvscan           | Scan physical volumes |
+| Vgscan           | Scan volume groups    |
+| Lvscan           | Scan ogical volumes   |
+| Pvdisplay        | List physical volumes |
+| Vgdisplay        | List volume groups    |
+| Lvdisplay        | List logical volumes  |
+
+
+
+
+
+
+
+
+

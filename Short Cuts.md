@@ -65,9 +65,3 @@ shift a
 gg (press g key twice)
 
 
-? - match any single charachter
-[abc] - match any one of the charachters in the list, case sensitive.
-[^abc] - matches any one charachter except those in the list case sensitve
-[0-9] - matches a range of numbers
-
-

@@ -36,12 +36,12 @@ Configure local storage
 | Df -Th       | Show all available disk space with the system mounts (including the filesystem) |
 |              |                                                              |
 
-
-| **Swap**                                                     |                                                              |
+|**Add new partitions and logical volumes, and swap to a system non-destructively**
+||
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Swap**                                                     |                                                              |
 | First create a LV disk that you want to enable for swap with Lvcreate ! |                                                              |
 | Parted /dev/vg_disk/lv_disk2                                 |                                                              |
-| ![image-20210123122356112](images/RHCSA8_notes/image-20210123122356112.png) |                                                              |
 | Mkswap /dev/vdb1                                             | Makeswap partition                                           |
 | Free -m                                                      | Showing how many swap space there is before                  |
 | Swapon /dev/vdb1                                             | Enable the swap partition                                    |

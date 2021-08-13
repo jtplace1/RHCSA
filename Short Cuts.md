@@ -13,7 +13,7 @@ Useful commands
 
 diff
 df --total -h
-
+df -i
 
 ls -lR
 

@@ -21,7 +21,6 @@ Manage basic networking
 | iwconfig \<wlan device> essid “wlan name” key s:password     | Setting SSID for wireless interface                          |
 | iwlist \<wlan device> scan                                   | Scanning for all the wlan SSID’s                             |
 | Ip address                                                   | Showing all the ip adresses for the interfaces               |
-| netplan                                                      | Configure networking for Ubuntu                              |
 | /etc/sysconfig/network-scripts                               | Config location for Red Hat systems                          |
 | Route add default gw 192.168.0.254                           | Set a default gateway on a host                              |
 | Ip neighbour show / arp -a                                   | Show the ARP table                                           |

@@ -2,14 +2,9 @@ Create and configure file systems
 
 
 # Create and configure file systems
-- 
-- 
 - Create and configure set-GID directories for collaboration
 - Configure disk compression
 - Manage layered storage
-- 
-
-
 
 | **Folders** |                                                              |
 | ----------- | ------------------------------------------------------------ |

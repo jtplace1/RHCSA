@@ -12,6 +12,21 @@ Manage users and groups
 
 
 
+
+
+| **User creation/ Group creation etc.** |                                                              |
+| -------------------------------------- | ------------------------------------------------------------ |
+| /etc/login.defs                        | Changing global variables such as password age etc.          |
+| /etc/skel                              | When a user is created files from this folder will be copied to the user folder |
+
+
+
+
+
+
+
+
+
 | **User creation/ Group creation etc.** |                                                              |
 | -------------------------------------- | ------------------------------------------------------------ |
 | /etc/login.defs                        | Changing global variables such as password age etc.          |

@@ -2,14 +2,12 @@ Create and configure file systems
 
 
 # Create and configure file systems
-- Create, mount, unmount, and use vfat, ext4, and xfs file systems
-- Mount and unmount network file systems using NFS
-- Extend existing logical volumes
+- 
+- 
 - Create and configure set-GID directories for collaboration
 - Configure disk compression
 - Manage layered storage
-- Diagnose and correct file permission problems
-
+- 
 
 
 
@@ -24,9 +22,9 @@ Create and configure file systems
 | /usr/       | all system-wide, read-only files installed by (or provided by) the OS |
 
 
-
-| **EXT**                                         |                                                              |
+|**Create, mount, unmount, and use vfat, ext4, and xfs file systems**||
 | ----------------------------------------------- | ------------------------------------------------------------ |
+| **EXT**                                         |                                                              |
 | Ext2                                            |                                                              |
 | Ext3 (standard)                                 | Has journaling                                               |
 | Ext4                                            | Has journaling + bigger drive supports (up to 32TB drives)   |
@@ -42,17 +40,13 @@ Create and configure file systems
 | Edit fstab file! /etf/fstab                     |                                                              |
 | Swapoff -a                                      | Disables all swapfiles (based on fstab file)                 |
 
-
-
-
-
-
-| **Tune2fs**              |                                                              |
+|**Diagnose and correct file permission problems**||
 | ------------------------ | ------------------------------------------------------------ |
+| **Tune2fs**              |                                                              |
 | tune2fs -i 200 /dev/sda1 | Changing the interval in when the filesystem needs to be checked (ext2, ext3 and ext4) if you apply a 0 there will be no checks |
 
 
-| **Mounting NFS Share**                                       |                                                              |
+| **- Mount and unmount network file systems using NFS**                                       |                                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | Show mount -e \<IP address of the server\>                   | Showing witch directories are available to make a connection to |
 | mount 192.168.82.132:/var/share /var/share                   | Mounting the share                                           |
@@ -66,7 +60,7 @@ Create and configure file systems
 || Vi /etc/auto.home                                            |
 
 
-| **Extend filesystem**                  |                                |
+| **Extend existing logical volumes**                  |                                |
 | -------------------------------------- | ------------------------------ |
 | Lvextend -L +1GB /dev/vg_disk/lv_disk3 | Extend the filesystem with 1GB |
 | resize2fs /dev/vg_disk/lv_disk         | Resize the filesystem          |

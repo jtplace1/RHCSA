@@ -3,22 +3,12 @@ Manage users and groups
 # Manage users and groups
 
 - Create, delete, and modify local user accounts
-	- useradd
-	- usermod
-	- /etc/shadow
-	- userdel
 - Change passwords and adjust password aging for local user accounts
-	- /etc/passwd 
-	- passwd
-	- chage
 - Create, delete, and modify local groups and group memberships
 	- groupadd
-	- /etc/group
 - Configure superuser access
 	- su
 	- /etc/profile
-	- /etc/skel
-
 
 
 | **User creation/ Group creation etc.** |                                                              |

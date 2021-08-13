@@ -1,26 +1,38 @@
-Manage users and groups
 
-# Manage users and groups
-
-- Create, delete, and modify local user accounts
-- Change passwords and adjust password aging for local user accounts
-- Create, delete, and modify local groups and group memberships
 	- groupadd
-- Configure superuser access
-	- su
 	- /etc/profile
 
 
 
 
 
-| **User creation/ Group creation etc.** |                                                              |
+| **Create, delete, and modify local user accounts** |                                                              |
 | -------------------------------------- | ------------------------------------------------------------ |
 | /etc/login.defs                        | Changing global variables such as password age etc.          |
 | /etc/skel                              | When a user is created files from this folder will be copied to the user folder |
 
 
 
+| **Change passwords and adjust password aging for local user accounts** |                                                              |
+| -------------------------------------- | ------------------------------------------------------------ |
+| /etc/login.defs                        | Changing global variables such as password age etc.          |
+| /etc/skel                              | When a user is created files from this folder will be copied to the user folder |
+
+| **Create, delete, and modify local groups and group memberships** |                                                              |
+| -------------------------------------- | ------------------------------------------------------------ |
+| /etc/login.defs                        | Changing global variables such as password age etc.          |
+| /etc/skel                              | When a user is created files from this folder will be copied to the user folder |
+
+
+| **Configure superuser access** |                                                              |
+| -------------------------------------- | ------------------------------------------------------------ |
+| /etc/login.defs                        | Changing global variables such as password age etc.          |
+| /etc/skel                              | When a user is created files from this folder will be copied to the user folder |
+
+| **** |                                                              |
+| -------------------------------------- | ------------------------------------------------------------ |
+| /etc/login.defs                        | Changing global variables such as password age etc.          |
+| /etc/skel                              | When a user is created files from this folder will be copied to the user folder |
 
 
 

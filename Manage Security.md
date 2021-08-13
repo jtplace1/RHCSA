@@ -30,3 +30,9 @@ Manage Security
 | yum install selinux-policy-doc                       |                                         |
 |                                                      |                                         |
 
+| **Selinux**  |                            |
+| ------------ | -------------------------- |
+| sestatus     | Show the status of selinux |
+| Setenforce 0 | Set selinux to permissive  |
+| Setenforce 1 | Set selinux to enforced    |
+|              |                            |

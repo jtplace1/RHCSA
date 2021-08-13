@@ -88,3 +88,22 @@ Grant user as sudo user -> visudo
 | bcfg                 | Interactive shell within UEFI for changing the boot configuration |
 
 
+| **Syslog / Logging**                                         | **Port 514**                                                 |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Rsyslogd                                                     | /etc/rsyslogd.conf and /etc/rsyslog.d directory              |
+| Rsyslog                                                      | Facility -> level -> action ofwel facility.level action   **Facility:** Type of application / service **Level:** Debug, informational etc. |
+| *. * @192.168.10.254:514                                     | Append this to /etc/rsyslog.conf to enable remote logging    |
+| Logrotate                                                    | Archiving logs based ont the /etc/logrotate.conf             |
+| Systems-cat                                                  | Creating manual log entries in the syslog (alternative for logger) |
+| logger                                                       | Creating manual log entries in the syslog                    |
+| DINWECAP (7: debug, 6: infom, 5: notice 4: warning, 3: error, 2: critical, 1: alert, 0: panic) | Syslog levels                                                |
+| Journalctl                                                   | /var/log/journal stores the files                            |
+| Journalctl -f                                                | The same as tail -f                                          |
+| Journalctl -u <system d process>                             | Show logging a systemd process                               |
+| Journalctl -r                                                | Show all the newest messages (on the top) r stands for reverse |
+| Journalctl -e                                                | Show the end of the journal                                  |
+|                                                              | ![image-20210123124240928](../../images/LPIC_notes/image-20210123124240928.png) |
+|                                                              | ![image-20210123124255862](../../images/LPIC_notes/image-20210123124255862.png) |
+
+
+

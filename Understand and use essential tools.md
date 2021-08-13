@@ -82,7 +82,6 @@ Understand and use essential tools
 |                                             |                                                           |
 | ~/.ssh/authorized_keys                      | Location where it stores it authorised keys               |
 |                                             |                                                           |
-
 | **Key-Based Authentication SSH**                             |                                                     |
 
 | Ssh-keygen -t rsa -b 4096                                    | Creating a key pair (private and public) in the root folder ~/.ssh |

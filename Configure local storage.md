@@ -2,7 +2,6 @@ Configure local storage
 
 # Configure local storage
 
- - 
 - Create and remove physical volumes
 - Assign physical volumes to volume groups
 - Create and delete logical volumes

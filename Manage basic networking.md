@@ -9,7 +9,7 @@ Manage basic networking
 
 | **Networking**                                               |                                                              |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| nmtui                                                        |                                                              |
+| nmcli                                                        |                                                              |
 | nmcli con add type ethernet con-name eth1 inflame enp0s3 ipv 10.0.2.10/24 gw4 192.168.1.254 | Setting you IP address with the nmcli command                |
 | nmcli device wifi connect \<SSID> password \<password>       | Connecting to a wireless network with NMCLI                  |
 | Nmcli con up \<connection name>                              | Enable a new connection with NMCLI                           |
@@ -17,7 +17,6 @@ Manage basic networking
 | nmcli device wifi list                                       | Show all the available networks                              |
 | Ip Route                                                     | Show default routes on your local host                       |
 | ethtool \<interface>                                         | Display ethernet settings                                    |
-| Ifconfig (legacy)                                            | Display ip address of set ip address                         |
 | iwconfig \<wlan device> essid “wlan name” key s:password     | Setting SSID for wireless interface                          |
 | iwlist \<wlan device> scan                                   | Scanning for all the wlan SSID’s                             |
 | Ip address                                                   | Showing all the ip adresses for the interfaces               |

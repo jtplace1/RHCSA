@@ -24,9 +24,7 @@ Understand and use essential tools
 
 
 
-
-
-| **Use input-output redirection (>, >>, |, 2>, etc.)** |     |
+| **Use input-output redirection (>, >>, '|', 2>, etc.)** |     |
 | -------- | ------------------------------------------------ |
 | >        | Overwrite file                                   |
 | >>       | Appending to a file                              |
@@ -35,7 +33,7 @@ Understand and use essential tools
 | &>       | Redirect output and errors to a file (overwrite) |
 | &>>      | Redirect output and errors to a file (apending)  |
 | <        | is used to redirect the input of a command.      |
-|
+
  
 	- head / tail
 	- less / more

@@ -35,7 +35,7 @@ Understand and use essential tools
 | &>       | Redirect output and errors to a file (overwrite) |
 | &>>      | Redirect output and errors to a file (apending)  |
 | <        | is used to redirect the input of a command.      |
-
+|
  
 	- head / tail
 	- less / more

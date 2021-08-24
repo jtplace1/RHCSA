@@ -35,8 +35,7 @@ Understand and use essential tools
 | <        | is used to redirect the input of a command.      |
 
  
-	- head / tail
-	- less / more
+	- less
 
 - Use grep and regular expressions to analyze text
 	- awk
@@ -92,10 +91,9 @@ Understand and use essential tools
 	- scp
 	- sftp
 - Log in and switch users in multiuser targets
--
-- Archive, compress, unpack, and uncompress files using tar, star, gzip, and bzip2
 
-| **TAR**                |                                                              |
+
+| **Archive, compress, unpack, and uncompress files using tar, star, gzip, and bzip2**                |                                                              |
 | ---------------------- | ------------------------------------------------------------ |
 | -t                     | Shows the full archive                                       |
 | **ZIP**                |                                                              |
@@ -110,7 +108,7 @@ Understand and use essential tools
 | tar -cJvf              | -c = create -J = XZ -v = verbose (display each file name) -f = file |
 | Tar -xJvf              | -x = extract -J = XZ -v = verbose (display each file name) -f = file |
 	
-	- star
+	
  
 - Create and edit text files
 	- vim

@@ -24,7 +24,7 @@ Understand and use essential tools
 
 
 
-| **Use input-output redirection (>, >>, '|', 2>, etc.)** |     |
+| **Use input-output redirection (>, >>, 2>, etc.)** |        |
 | -------- | ------------------------------------------------ |
 | >        | Overwrite file                                   |
 | >>       | Appending to a file                              |

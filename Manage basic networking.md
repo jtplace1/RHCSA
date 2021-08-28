@@ -57,6 +57,7 @@ Manage basic networking
 | Netstat -l                                   | Showing which application are listening on which port        |
 | Netstat -s                                   | Showing statistics for different kind of messages            |
 | Ss -anpt                                     | Showing which system process are using which network sockets (currently) |
+| lsof -i                                      | Show open network ports                                      | 
 | Nc                                           | Netcat utility (reading and writing to or from a network port) |
 | Route del default or ip route del default    | Removing the default route (gateway)                         |
 

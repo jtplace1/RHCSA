@@ -13,7 +13,7 @@ Manage basic networking
 | nmcli con add type ethernet con-name eth1 inflame enp0s3 ipv 10.0.2.10/24 gw4 192.168.1.254 | Setting you IP address with the nmcli command                |
 | nmcli device wifi connect \<SSID> password \<password>       | Connecting to a wireless network with NMCLI                  |
 | Nmcli con up \<connection name>                              | Enable a new connection with NMCLI                           |
-| nmcli radio                                                  | Show if there is a Wifi module active                        |
+| nmcli con show                                                  | Show if there is a Wifi module active                        |
 | nmcli device wifi list                                       | Show all the available networks                              |
 | Ip Route                                                     | Show default routes on your local host                       |
 | ethtool \<interface>                                         | Display ethernet settings                                    |
@@ -46,16 +46,14 @@ Manage basic networking
 | Ping 1.1.1.1                                 |                                                              |
 | Ping6 fe80::c418:2ed0:aead:cbce%**enp0s3**   | When sending out packages of a link local address you must specify the outgoing interface! |
 | Tracepath 1.1.1.1                            | Tracing routes                                               |
-| Host [www.google.com](http://www.google.com) | Testing a DNS name (output: ip adresses that are asociated with that IP address) |
 | Dig \<domain name>                           | Getting all the DNS adresses                                 |
 | Dig -t mx \<domain name\>                    | Search for the type MX in the domain name                    |
-| Nslookup <domain name\>                      |                                                              |
 | Getent hosts                                 | Looking up all the hosts in the /etc/hosts file              |
-| Netstat                                      | Showing all the current open network connections             |
-| Netstat -t                                   | TCP connections                                              |
-| Netstat -u                                   | UDP connections                                              |
-| Netstat -l                                   | Showing which application are listening on which port        |
-| Netstat -s                                   | Showing statistics for different kind of messages            |
+| ss                                      | Showing all the current open network connections             |
+| ss -t                                   | TCP connections                                              |
+| ss -u                                   | UDP connections                                              |
+| ss -l                                   | Showing which application are listening on which port        |
+| ss -s                                   | Showing statistics for different kind of messages            |
 | Ss -anpt                                     | Showing which system process are using which network sockets (currently) |
 | lsof -i                                      | Show open network ports                                      | 
 | Nc                                           | Netcat utility (reading and writing to or from a network port) |

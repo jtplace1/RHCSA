@@ -29,15 +29,12 @@ Manage basic networking
 
 | **DHCP** |             |
 | -------- | ----------- |
-| Dhcpd    | Dhcp client |
 | Dhclient | Dhcp client |
-| Pump     | Dhcp client |
 
 | **Bonding NIC’s**                         | For load balancing, aggregation or active/pasive    |
 | ----------------------------------------- | --------------------------------------------------- |
 | modprobe bonding                          | Creating a bon0 interface                           |
 | Ip link add bon0 type bond mode <mode nr> | Creating a bond (there are different kind of modes) |
-| Sudo ip link set eth0 master bond0        | Adding interface to a bond                          |
 | Sudo ip link set eth1 master bond0        | Adding interface to a bond                          |
 
 
@@ -48,11 +45,9 @@ Manage basic networking
 | Ping6 fe80::c418:2ed0:aead:cbce%**enp0s3**   | When sending out packages of a link local address you must specify the outgoing interface! |
 | Tracepath 1.1.1.1                            | Tracing routes                                               |
 | Dig \<domain name>                           | Getting all the DNS adresses                                 |
-| Dig -t mx \<domain name\>                    | Search for the type MX in the domain name                    |
 | Getent hosts                                 | Looking up all the hosts in the /etc/hosts file              |
 | ss                                      | Showing all the current open network connections             |
 | Ss -anpt                                     | Showing which system process are using which network sockets (currently) |
-
 | lsof -i                                      | Show open network ports                                      | 
 | Nc                                           | Netcat utility (reading and writing to or from a network port) |
 | Route del default or ip route del default    | Removing the default route (gateway)                         |

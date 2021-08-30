@@ -7,18 +7,9 @@ Understand and use essential tools
 
 | **Command**                                            |                                                              |
 | ------------------------------------------------------ | ------------------------------------------------------------ |
-| w                                                      | Show who is logged in to the machine and what they are doing |
-| wc                                                     | Counting rows, words, bytes                                  |
-| Split -l 2                                             | Split files with 2 rows each                                 |
-| Head                                                   | Showing the first 10 lines of a file (-n 2 for last 2 lines etc) |
-| Tail                                                   | Showing the last 10 lines of a file (-n 2 for last 2 lines etc) |
-| Diff                                                   | Show differences                                             |
-| Sort                                                   | Sorting the output                                           |
-| Nl                                                     | Numbering the lines in the output                            |
-| ping [google.com](http://google.com) \| tee output.txt | Write the STDOUT to a file and also shows the STDOUT         |
-| Cut                                                    |                                                              |
-| Set                                                    | Print all the environment variables                          |
-| Uniq                                                   | Finding uniq file lines                                      |
+
+
+
 | jobs                                                   | Show all background tasks running in the current shell       |
 
 
@@ -35,7 +26,7 @@ Understand and use essential tools
 | <        | is used to redirect the input of a command.      |
 
  
-	- less
+	- 
 
 - Use grep and regular expressions to analyze text
 	- awk
@@ -110,33 +101,39 @@ Understand and use essential tools
 	
 	
  
-- Create and edit text files
+- 
 	- vim
 	- touch
-
-| **Sed (change words)**       					|	                                |
+|**Create and edit text files**		|				|
 | -----------------------------------  | ------------------------------- |
+| **Sed (change words)**       					|	                                |
 | Sed ’s/parttime/fulltime/‘ team      | Change every word from parttime to fulltime (s stands for substitution ofwel vervangen) (display it, not changing the original file) |
 | Sed ‘/fulltime/w fulltime.txt’ team            | Write every line that has the word fulltime in it to a new file fulltime.txt (display it, not changing the original file) |
 | Sed ‘0,/parttime/s/parttime/promotion’ team    | Change the first parttime with to promotion (display it, not changing the original file) |
 | Sed -i ‘0,/parttime/s/parttime/promotion’ team | Change the first parttime with to promotion (change it, changing the original file) |
-			
+| wc                                                     | Counting rows, words, bytes                                  |
+| Split -l 2                                             | Split files with 2 rows each                                 | | Diff                                                   | Show differences                                             |
+| Sort                                                   | Sorting the output                                           |
+| Nl                                                     | Numbering the lines in the output                            || |Cut                                                    |                                                              |
+| Set                                                    | Print all the environment variables                          |
+| Uniq                                                   | Finding uniq file lines                                      |			
 
 
 | **Create, delete, copy, and move files and directories**  |                                                        |
 | -------------------- | ------------------------------------------------------ |
 | Ls -R                | Show all files in a directory including subdirectories |
-|     ls-al                |       Lists files and directories with detailed information like permissions,size, owner, etc.    |
+|     ls-al            | Lists files and directories with detailed information like permissions,size, owner, etc.    |
 |                      |                                                        |
 | Cp -R /etc /home/dir | Copies all the files including the subdirectories      |
 | cat file1 file2 > file3   |  Joins two files (file1, file2) and stores the output in a new file (file3) |
-|                      |                                                        |
-|                      |                                                        |
-|                      |                                                        |
-|                      |     						        |
+|    find . -type      |                                                        |
+|       locate         |                                                        |
+|       less           |                                                        |
+| Tail                 | Showing the last 10 lines of a file (-n 2 for last 2 lines etc) | 
+| Head                                                   | Showing the first 10 lines of a file (-n 2 for last 2 lines etc) |
 |                      |                                                        |
 
-	- find
+	- 
 	- mktemp
 	- rmdir
 	- which

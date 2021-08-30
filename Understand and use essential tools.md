@@ -3,10 +3,6 @@ Understand and use essential tools
 # Understand and use essential tools
 
 
-- Access a shell prompt and issue commands with correct syntax
-
-
-
 | **Use input-output redirection (>, >>, 2>, etc.)** |        |
 | -------- | ------------------------------------------------ |
 | >        | Overwrite file                                   |

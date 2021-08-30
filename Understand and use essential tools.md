@@ -103,8 +103,7 @@ Understand and use essential tools
 |                      |                                                        |
 
 
-	- mktemp
-	- which
+	which
 
 | **Create hard and soft links**     |                                     |
 | -------------------------------- | ----------------------------------- |
@@ -132,9 +131,9 @@ Understand and use essential tools
 | Updatedb               | Updates the locate database          |
 | **Find**               |				        |
 | find /etc -name “motd” | Finding files with the motd included |
-| find / -user jan -exec tar -cvzf file.tar.gz {} + |      |
-| find / -user peter -exec cp {} /root/backup \;    |      |
-
+| find / -user jan -exec tar -cvzf file.tar.gz {} + |   	|
+| find / -user peter -exec cp {} /root/backup \;    |      	|
+| which 		 |  locate the executable file associated with the given command |
 
 
 

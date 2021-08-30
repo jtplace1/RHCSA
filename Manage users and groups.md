@@ -10,12 +10,11 @@
 | -------------------------------------- | ------------------------------------------------------------ |
 | /etc/skel                              | When a user is created files from this folder will be copied to the user folder |
 | /etc/passwd                            | **Home directory**: The absolute path to the directory the user will be in when they log in. If this directory does not exists then users directory becomes / **Command/shell**: The absolute path of a command or shell (/bin/bash). Typically, this is a shell. Please note that it does not have to be a shell. For example, sysadmin can use the nologin shell, which acts as a replacement shell for the user accounts. If shell set to **/sbin/nologin** and the user tries to log in to the Linux system directly, the /sbin/nologin shell closes the connection. |
-| chfn                                   | Change personal information (5th field /etc/passwd)          |
 | Usermod -L \<username\>                | Lock a user                                                  |
 | Usermod -U \<username\>                | Unlock a user                                                |
 | Usermod -d \<username\>                | Change the default home directory (with -m : move the current directory of that user) |
 | Userdel -r                             | Deleting a user including all the files (homefolder)         |
-| Useradd \<username\>                           | Adding a user                                                |
+| Useradd \<username\>                   |  Adding a user                                                |
 
 
 
@@ -30,7 +29,7 @@
 | Chage \<username\>                     | Changing account password settings                           |
              
 
-| **Create, delete, and modify local groups and group memberships** |                                                              |
+| **Create, delete, and modify local groups and group memberships** |                                   |
 | -------------------------------------- | ------------------------------------------------------------ |
 | Groups \<username\>                    | Showing where a user is member off                           |
 | Groupadd \<group name\>                | Adding a group                                               |
@@ -44,7 +43,7 @@
 
 
 
-| **Configure superuser access** |                                                              |
+| **Configure superuser access**         |                                                              |
 | -------------------------------------- | ------------------------------------------------------------ |
 | /etc/login.defs                        | Changing global variables such as password age etc.          |
 

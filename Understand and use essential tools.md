@@ -7,9 +7,6 @@ Understand and use essential tools
 
 | **Command**                                            |                                                              |
 | ------------------------------------------------------ | ------------------------------------------------------------ |
-
-
-
 | jobs                                                   | Show all background tasks running in the current shell       |
 
 
@@ -30,10 +27,11 @@ Understand and use essential tools
 
 - Use grep and regular expressions to analyze text
 	- awk
-	- wc
+
 		
-| **Grep**                                 |                                                              |
+| **Use grep and regular expressions to analyze text**           |                                        |
 | ---------------------------------------- | ------------------------------------------------------------ |
+| **Grep**                                 |                                                              |
 | Grep \<pattern\> \<filename\>            | Search for a keyword in a file                               |
 | Grep -lr cron /etc                       | Search for patterns in all the files in a folder (including all subdirectories because of -r) |
 | **Egrep (Extended Regular Expressions)** |                                                              |
@@ -41,8 +39,6 @@ Understand and use essential tools
 | Egrep -I ‘hello\|world’ \<filename\>     | -I : ignore case sensitive ‘hello.*world’: hello or world in it |
 | Egrep -v ‘hello\|world’ \<filename\>     | -v: everything that does not contain hello or world in it    |
 | **Fgrep (Fixed, same as Grep -f)**       |                                                              |
-
-
 **Regular Expressions**  |                                                              |
 | ------------------------ | ------------------------------------------------------------ |
 | \<keyword\>$ bijv: test$ | Matches and of the the string                                |

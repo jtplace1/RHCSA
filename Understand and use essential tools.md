@@ -123,20 +123,23 @@ Understand and use essential tools
 			
 
 
+| **Create, delete, copy, and move files and directories**  |                                                        |
+| -------------------- | ------------------------------------------------------ |
+| Ls -R                | Show all files in a directory including subdirectories |
+|     ls-al                |       Lists files and directories with detailed information like permissions,size, owner, etc.    |
+|                      |                                                        |
+| Cp -R /etc /home/dir | Copies all the files including the subdirectories      |
+| cat file1 file2 > file3   |  Joins two files (file1, file2) and stores the output in a new file (file3) |
+|                      |                                                        |
+|                      |                                                        |
+|                      |                                                        |
+|                      |     						        |
+|                      |                                                        |
 
-
-- Create, delete, copy, and move files and directories
-	- mv
-	- cp
-	- rm
 	- find
-	- ls
-	- pwd
-	- mkdir
 	- mktemp
 	- rmdir
 	- which
-	- ~
 
 | **Create hard and soft links**     |                                     |
 | -------------------------------- | ----------------------------------- |
@@ -181,11 +184,5 @@ Understand and use essential tools
 |                                      |                                          |
 
 
-| **File management**  |                                                        |
-| -------------------- | ------------------------------------------------------ |
-| Ls -R                | Show all files in a directory including subdirectories |
-| Cp -R /etc /home/dir | Copies all the files including the subdirectories      |
-|                      |                                                        |
-|                      |                                                        |
 
 

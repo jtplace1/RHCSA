@@ -93,14 +93,11 @@ Process:
 
 | **Start and stop services and configure services to start automatically at boot**                             |                                                             |
 | ---------------------------------------- | ----------------------------------------------------------- |
-| SysV                                     | /etc/init.d                                                 |
-| /etc/inittab                             | SysV uses this configfile                                   |
 |                                          |                                                             |
 | Systemd                                  | /usr/lib/systemd/                                           |
 | /usr/lib/systemd/system/                 | Systemd uses this folder                                    |
 | /usr/lib/systemd/system/default.target e |                                                             |
 | Systemctl get-default                    | Show what your default target is                            |
-| stat /proc/1/exe                         | Check if you are running SysV or Systems                    |
 | systemctl list-unit-files                | Showing witch services are started when the system boots    |
 | systemctl \| grep running                | Showing witch services are currently running on the machine |
 
@@ -157,18 +154,13 @@ Process:
 | /sys/bus/usb/devices             | Folder where usb information has been stored         |
 | /etc/udev/rules.d                | Location where udev rules are stored                 |
 | Fsck                             | Check filesystem if there are no bad sectors etc.    |
-| /etc/init.d                      | Scripts for starting and stopping services for SysV  |
 | Systemd-delta                    | Show overwritten config files                        |
-
-| **Upstart**    |                                         |
-| -------------- | --------------------------------------- |
-| Initctl reload | Reloading the configfiles for upstart   |
-| Initctl list   | Showing all the running upstart scripts |
-|                |                                         |
-
-| /proc/mdstat | Information about RAID configs |
-| ------------ | ------------------------------ |
-|              |                                |
+| systemctl restart   | Resart service |
+|       systemctl get-default         |                                         |
+|       systemctl set-default         |                                         |
+|      systemctl list-units --type=targe         |                                         |
+|         systemctl isolate       |                                         | 
+ 
 
 
   

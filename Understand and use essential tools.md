@@ -5,11 +5,6 @@ Understand and use essential tools
 
 - Access a shell prompt and issue commands with correct syntax
 
-| **Command**                                            |                                                              |
-| ------------------------------------------------------ | ------------------------------------------------------------ |
-| jobs                                                   | Show all background tasks running in the current shell       |
-
-
 
 
 | **Use input-output redirection (>, >>, 2>, etc.)** |        |
@@ -23,11 +18,6 @@ Understand and use essential tools
 | <        | is used to redirect the input of a command.      |
 
  
-	- 
-
-- Use grep and regular expressions to analyze text
-	- awk
-
 		
 | **Use grep and regular expressions to analyze text**           |                                        |
 | ---------------------------------------- | ------------------------------------------------------------ |
@@ -39,8 +29,7 @@ Understand and use essential tools
 | Egrep -I ‘hello\|world’ \<filename\>     | -I : ignore case sensitive ‘hello.*world’: hello or world in it |
 | Egrep -v ‘hello\|world’ \<filename\>     | -v: everything that does not contain hello or world in it    |
 | **Fgrep (Fixed, same as Grep -f)**       |                                                              |
-**Regular Expressions**  |                                                              |
-| ------------------------ | ------------------------------------------------------------ |
+|**Regular Expressions**  |                                                              |
 | \<keyword\>$ bijv: test$ | Matches and of the the string                                |
 | ^\<keyword\> bijv: ^test | Matches start of string and represents characters not in the string. |
 | [a-z ]     [0-9]               | Matches on range                                       |
@@ -55,36 +44,29 @@ Understand and use essential tools
 | **Access remote systems using SSH**         |                                                           |
 | ------------------------------------------- | --------------------------------------------------------- |
 | Ssh -I \<identity file\>                    |                                                           |
-| Ssh -X \<ip address\>                       | Connecting to a remote ssh server with GUI / Terminal Gun |
 | ssh-add -l                                  | List all the keys from the agent                          |
 | Ssh-add -D                                  | Delete all the keys from the SSH Agent                    |
 | Scp test.txt 192.168.0.1:/etc/home/test.txt | Copying a file from localhost to a remote server          |
-|                                             |                                                           |
 | Ssh-keygen                                  |                                                           |
-|                                             |                                                           |
 | ~/.ssh/authorized_keys                      | Location where it stores it authorised keys               |
-|                                             |                                                           |
-| **Key-Based Authentication SSH**                             |                                                     |
-
-| Ssh-keygen -t rsa -b 4096                                    | Creating a key pair (private and public) in the root folder ~/.ssh |
-| Ssh folder 700                                               |                                                              |
-| Contents in ssh folder 600                                   |                                                              |
-| Ssh-copy-id [root@192.168.82.128](mailto:root@192.168.82.128) | Copy the public key to a different host                      |
+| **Key-Based Authentication SSH**            |			                                          |
+| Ssh-keygen -t rsa -b 4096                   | Creating a key pair (private and public) in the root folder ~/.ssh |
+| Ssh-copy-id [root@192.168.82.128](mailto:root@192.168.82.128) | Copy the public key to a different host |
 
 
 	- /etc/ssh/sshd_config
-	- systemctl status sshd
 	- journalctl -u sshd -r 
 	- scp
 	- sftp
+	
+	
 - Log in and switch users in multiuser targets
 
 
-| **Archive, compress, unpack, and uncompress files using tar, star, gzip, and bzip2**                |                                                              |
+| **Archive, compress, unpack, and uncompress files using tar, star, gzip, and bzip2** ||
 | ---------------------- | ------------------------------------------------------------ |
+| **Tar**                |                                                              |
 | -t                     | Shows the full archive                                       |
-| **ZIP**                |                                                              |
-| Zip test.zip file1.txt | Zipping a file                                               |
 | **Gzip**               | Open source zip file format                                  |
 | Tar -czvf              | -c = create -z = gzip -v = verbose (display each file name) -f = file |
 | Tar -xzvf              | -x = extract -z = gzip -v = verbose (display each file name) -f = file |
@@ -96,10 +78,6 @@ Understand and use essential tools
 | Tar -xJvf              | -x = extract -J = XZ -v = verbose (display each file name) -f = file |
 	
 	
- 
-- 
-	- vim
-	- touch
 |**Create and edit text files**		|				|
 | -----------------------------------  | ------------------------------- |
 | **Sed (change words)**       					|	                                |
@@ -110,37 +88,32 @@ Understand and use essential tools
 | wc                                                     | Counting rows, words, bytes                                  |
 | Split -l 2                                             | Split files with 2 rows each                                 | | Diff                                                   | Show differences                                             |
 | Sort                                                   | Sorting the output                                           |
-| Nl                                                     | Numbering the lines in the output                            || |Cut                                                    |                                                              |
+| Nl                                                     | Numbering the lines in the output                            | | Cut                                                     |                                                              |
 | Set                                                    | Print all the environment variables                          |
-| Uniq                                                   | Finding uniq file lines                                      |			
+| Uniq                                                   | Finding uniq file lines                                      | | awk                 				   |								  |			
 
 
-| **Create, delete, copy, and move files and directories**  |                                                        |
+| **Create, delete, copy, and move files and directories**  |                   |
 | -------------------- | ------------------------------------------------------ |
 | Ls -R                | Show all files in a directory including subdirectories |
 |     ls-al            | Lists files and directories with detailed information like permissions,size, owner, etc.    |
-|                      |                                                        |
 | Cp -R /etc /home/dir | Copies all the files including the subdirectories      |
 | cat file1 file2 > file3   |  Joins two files (file1, file2) and stores the output in a new file (file3) |
 |    find . -type      |                                                        |
 |       locate         |                                                        |
 |       less           |                                                        |
 | Tail                 | Showing the last 10 lines of a file (-n 2 for last 2 lines etc) | 
-| Head                                                   | Showing the first 10 lines of a file (-n 2 for last 2 lines etc) |
+| Head                 | Showing the first 10 lines of a file (-n 2 for last 2 lines etc) |
 |                      |                                                        |
 
-	- 
+
 	- mktemp
-	- rmdir
 	- which
 
 | **Create hard and soft links**     |                                     |
 | -------------------------------- | ----------------------------------- |
 | Ln [filename] [hardlink]         | Creating a hardlink                 |
 | Ln -s [filename] [symbolic link] | Creating a softlink / symbolic link |
-|                                  |                                     |
-|                                  |                                     |
-
 
 
 -  List, set, and change standard ugo/rwx permissions

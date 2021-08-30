@@ -128,22 +128,14 @@ Understand and use essential tools
 
 | **Find files**         |                                      |
 | ---------------------- | ------------------------------------ |
-| Locate                 |                                      |
-| Locate \<search item\> |                                      |
+| Locate   file.txt      |                                      |
 | Updatedb               | Updates the locate database          |
-| Find /etc -name “motd” | Finding files with the motd included |
-
-
-| **Find**                                          |      |
-| ------------------------------------------------- | ---- |
+| **Find**               |				        |
+| find /etc -name “motd” | Finding files with the motd included |
 | find / -user jan -exec tar -cvzf file.tar.gz {} + |      |
 | find / -user peter -exec cp {} /root/backup \;    |      |
 
 
-| **Archiving**                        | **Description**                          |
-| ------------------------------------ | ---------------------------------------- |
-| Creating a iso from a file or CD-ROM | sudo dd if=/dev/cdrom of=/tmp/cdimg1.iso |
-|                                      |                                          |
 
 
 

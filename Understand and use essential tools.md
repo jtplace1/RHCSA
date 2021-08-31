@@ -55,27 +55,25 @@ Understand and use essential tools
 	- journalctl -u sshd -r 
 	
 	
-- Log in and switch users in multiuser targets
-
 
 | **Archive, compress, unpack, and uncompress files using tar, star, gzip, and bzip2** ||
 | ---------------------- | ------------------------------------------------------------ |
 | **Tar**                |                                                              |
 | -t                     | Shows the full archive                                       |
 | **Gzip**               | Open source zip file format                                  |
-| Tar -czvf              | -c = create -z = gzip -v = verbose (display each file name) -f = file |
-| Tar -xzvf              | -x = extract -z = gzip -v = verbose (display each file name) -f = file |
+| Tar -czvf              | -c = create -z = gzip 					|
+| Tar -xzvf              | -x = extract 						|
 | **Bzip2**              | Higher compression then Gzip                                 |
-| Tar -cjvf              | -c = create -j = bzip2 -v = verbose (display each file name) -f = file |
-| Tar -xjvf              | -x = extract -j = bzip2 -v = verbose (display each file name) -f = file |
+| Tar -cjvf              | -j = bzip2 							|
+| Tar -xjvf              | 	 							|
 | **Xz**                 | Highest compression but slower                               |
-| tar -cJvf              | -c = create -J = XZ -v = verbose (display each file name) -f = file |
-| Tar -xJvf              | -x = extract -J = XZ -v = verbose (display each file name) -f = file |
+| tar -cJvf              | -J = XZ	 						|
+| Tar -xJvf              | 								|
 	
 	
-|**Create and edit text files**		|				|
+|**Create and edit text files**	       |     			         |
 | -----------------------------------  | ------------------------------- |
-| **Sed (change words)**       					|	                                |
+| **Sed (change words)**       	       |	                         |
 | Sed ’s/parttime/fulltime/‘ team      | Change every word from parttime to fulltime (s stands for substitution ofwel vervangen) (display it, not changing the original file) |
 | Sed ‘/fulltime/w fulltime.txt’ team            | Write every line that has the word fulltime in it to a new file fulltime.txt (display it, not changing the original file) |
 | Sed ‘0,/parttime/s/parttime/promotion’ team    | Change the first parttime with to promotion (display it, not changing the original file) |
@@ -102,9 +100,8 @@ Understand and use essential tools
 |                      |                                                        |
 
 
-	which
 
-| **Create hard and soft links**     |                                     |
+| **Create hard and soft links**   |                                     |
 | -------------------------------- | ----------------------------------- |
 | Ln [filename] [hardlink]         | Creating a hardlink                 |
 | Ln -s [filename] [symbolic link] | Creating a softlink / symbolic link |

@@ -107,12 +107,18 @@ Understand and use essential tools
 | Ln -s [filename] [symbolic link] | Creating a softlink / symbolic link |
 
 
--  List, set, and change standard ugo/rwx permissions
-	- umask
+| **List, set, and change standard ugo/rwx permissions**   |             |
+| -------------------------------- | ----------------------------------- |
+|        umask 777		   |  default file mask 666   		 |
+|  				   |  default directory mask 777	 |
+|	/etc/profile		   |		login shells		 |
+|	/etc/bashrc		   |		interactive shells	 |  
+	- 
 	- chmod
 	- chgrp
 	- chown
-	- 
+	- suid
+	- gsuid
 | **Locate, read, and use system documentation including man, info, and files in /usr/share/doc** |                      |
 | -------------------------------- | ----------------------------------- |
 | man -k 		           | Search the short  manual  page  descriptions  for keywords and display any matches  |

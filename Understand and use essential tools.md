@@ -39,6 +39,8 @@ Understand and use essential tools
 
 | **Access remote systems using SSH**         |                                                           |
 | ------------------------------------------- | --------------------------------------------------------- |
+|  /etc/ssh/ssh_config			      |		Change system wide config			  |
+| ~/.ssh/config				      |		Set user ssh config				  |
 | Ssh -I \<identity file\>                    |                                                           |
 | ssh-add -l                                  | List all the keys from the agent                          |
 | Ssh-add -D                                  | Delete all the keys from the SSH Agent                    |
@@ -47,13 +49,10 @@ Understand and use essential tools
 | ~/.ssh/authorized_keys                      | Location where it stores it authorised keys               |
 | **Key-Based Authentication SSH**            |			                                          |
 | Ssh-keygen -t rsa -b 4096                   | Creating a key pair (private and public) in the root folder ~/.ssh |
-| Ssh-copy-id [root@192.168.82.128](mailto:root@192.168.82.128) | Copy the public key to a different host |
+| Ssh-copy-id [root@192.168.82.128] 	      | Copy the public key to a different host |
 
 
-	- /etc/ssh/sshd_config
 	- journalctl -u sshd -r 
-	- scp
-	- sftp
 	
 	
 - Log in and switch users in multiuser targets
@@ -84,7 +83,7 @@ Understand and use essential tools
 | wc                                                     | Counting rows, words, bytes                                  |
 | Split -l 2                                             | Split files with 2 rows each                                 | | Diff                                                   | Show differences                                             |
 | Sort                                                   | Sorting the output                                           |
-| Nl                                                     | Numbering the lines in the output                            | | Cut                                                     |                                                              |
+| Nl                                                     | Numbering the lines in the output                            | | Cut                                                    |                                                              |
 | Set                                                    | Print all the environment variables                          |
 | Uniq                                                   | Finding uniq file lines                                      | | awk                 				   |								  |			
 

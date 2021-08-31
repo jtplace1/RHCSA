@@ -24,12 +24,6 @@ mkdir -p
 
 $PATH
 
-make a bootable usb 
-dd if=boot.img of=./user
-
-backup MBR
-dd if=/dev/sda of=./backup.img bs=512 count=1
-
 tar -tf file.tar
 tar -cjf file.bz2
 tar -czf file.tar.gz

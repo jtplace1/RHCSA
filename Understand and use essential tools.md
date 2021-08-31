@@ -93,7 +93,6 @@ Understand and use essential tools
 | Cp -R /etc /home/dir | Copies all the files including the subdirectories      |
 | cat file1 file2 > file3   |  Joins two files (file1, file2) and stores the output in a new file (file3) |
 |    find . -type      |                                                        |
-|       locate         |                                                        |
 |       less           |                                                        |
 | Tail                 | Showing the last 10 lines of a file (-n 2 for last 2 lines etc) | 
 | Head                 | Showing the first 10 lines of a file (-n 2 for last 2 lines etc) |
@@ -113,7 +112,11 @@ Understand and use essential tools
 	- chgrp
 	- chown
 	- 
-- Locate, read, and use system documentation including man, info, and files in /usr/share/doc
+| **Locate, read, and use system documentation including man, info, and files in /usr/share/doc
+**   |                                     |
+| -------------------------------- | ----------------------------------- |
+| man -k 		           | Search the short  manual  page  descriptions  for keywords and display any matches  |
+| Ln -s [filename] [symbolic link] | Creating a softlink / symbolic link |
 	- man
 	- info
 	- whatis

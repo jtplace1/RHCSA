@@ -80,6 +80,7 @@ Understand and use essential tools
 | Sed -i ‘0,/parttime/s/parttime/promotion’ team | Change the first parttime with to promotion (change it, changing the original file) |
 | wc                                                     | Counting rows, words, bytes                                  |
 | Split -l 2                                             | Split files with 2 rows each                                 | | Diff                                                   | Show differences                                             |
+| patch 						 | takes a file containing a difference listing produced by the diff program and applies those differences to the original files |
 | Sort                                                   | Sorting the output                                           |
 | Nl                                                     | Numbering the lines in the output                            | | Cut                                                    |                                                              |
 | Set                                                    | Print all the environment variables                          |
@@ -112,11 +113,11 @@ Understand and use essential tools
 	- chgrp
 	- chown
 	- 
-| **Locate, read, and use system documentation including man, info, and files in /usr/share/doc
-**   |                                     |
+| **Locate, read, and use system documentation including man, info, and files in /usr/share/doc** |                      |
 | -------------------------------- | ----------------------------------- |
 | man -k 		           | Search the short  manual  page  descriptions  for keywords and display any matches  |
-| Ln -s [filename] [symbolic link] | Creating a softlink / symbolic link |
+| 					 | 				 |
+	
 	- man
 	- info
 	- whatis

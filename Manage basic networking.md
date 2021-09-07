@@ -4,7 +4,6 @@
 
  - Configure IPv4 and IPv6 addresses
 -  Configure network services to start automatically at boot
--  
 
 | **Networking**                                               |                                                         |
 |--------------------------------------------------------------|---------------------------------------------------------|

@@ -4,7 +4,7 @@
 
  - Configure IPv4 and IPv6 addresses
 -  Configure network services to start automatically at boot
--  Restrict network access using firewall-cmd/firewall
+-  
 
 | **Networking**                                               |                                                         |
 |--------------------------------------------------------------|---------------------------------------------------------|
@@ -61,3 +61,9 @@
 | Ss -lt                     | Showing all the listening ports on the current system        |
 | Nmcli dev show \<NICname\> | Show status of a interface                                   |
 
+ | **Restrict network access using firewall-cmd/firewall**             |                    |
+| -------------------------- | ------------------------------------------------------------ |
+| Firewall-cmd —add-service=http —permanent | Add a service                                           |
+| firewall-cmd —add-port=80/tcp —permanent  | Add a port                                              |
+| firewall-cmd —reload                      | Reload the firewall                                     |
+| firewall-cmd --remove-service --permanet  | Remove service                                          |

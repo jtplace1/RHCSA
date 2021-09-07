@@ -10,7 +10,7 @@ Manage basic networking
 | **Networking**                                               |                                                         |
 |--------------------------------------------------------------|---------------------------------------------------------|
 | nmcli                                                        |                                                         |
-| nmcli con add type ethernet con-name eth1 inflame enp0s3 ipv4 10.0.2.10/24 gw4 192.168.1.254 | Setting you IP address with the nmcli command                |
+| nmcli con add type ethernet con-name eth1 ifname enp0s3 ipv4 10.0.2.10/24 gw4 192.168.1.254 | Setting you IP address with the nmcli command                |
 | nmcli device wifi connect \<SSID> password \<password>       | Connecting to a wireless network with NMCLI             |
 | Nmcli con up \<connection name>                              | Enable a new connection with NMCLI                      |
 | nmcli con show                                               | Show if there is a Wifi module active                   |

@@ -28,14 +28,14 @@ Manage basic networking
 
 | **Configure hostname resolution** |             |
 | -------- | ----------- |
-|  getnet host       |                 |
+|  getnet host       |                               |
 | hostname           |    print hostname             |
-| /etc/hostname      |   configure hostname         |
-| hostnamectl         |     refresh hostname       |
+| /etc/hostname      |   configure hostname          |
+| hostnamectl         |     refresh hostname         |
 | /etc/resolve.config      |    configure dns        |
 | nmcli con modify <wifi name> ipv4.dns "8.8.8.8" |  |
-|systemctl restart NetworkManager| |
-| /etc/hosts/       |   configure local dns      |
+|systemctl restart NetworkManager|                   |
+| /etc/hosts       |   configure local dns      |
 
 
 | **Bonding NIC’s**                         | For load balancing, aggregation or active/pasive    |

@@ -3,33 +3,40 @@ Manage basic networking
 # Manage basic networking
 
  - Configure IPv4 and IPv6 addresses
--  Configure hostname resolution
+-  
 -  Configure network services to start automatically at boot
 -  Restrict network access using firewall-cmd/firewall
 
-| **Networking**                                               |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| nmcli                                                        |                                                              |
-| nmcli con add type ethernet con-name eth1 inflame enp0s3 ipv 10.0.2.10/24 gw4 192.168.1.254 | Setting you IP address with the nmcli command                |
-| nmcli device wifi connect \<SSID> password \<password>       | Connecting to a wireless network with NMCLI                  |
-| Nmcli con up \<connection name>                              | Enable a new connection with NMCLI                           |
-| nmcli con show                                                  | Show if there is a Wifi module active                        |
-| nmcli device wifi list                                       | Show all the available networks                              |
-| nmcli device status                                          | display network interfaces
-| Ip Route                                                     | Show default routes on your local host                       |
-| ethtool \<interface>                                         | Display ethernet settings                                    |
-| iwconfig \<wlan device> essid “wlan name” key s:password     | Setting SSID for wireless interface                          |
-| Ip address                                                   | Showing all the ip adresses for the interfaces               |
-| /etc/sysconfig/network-scripts                               | Config location for Red Hat systems                          |
-| Route add default gw 192.168.0.254                           | Set a default gateway on a host                              |
-| Ip neighbour show / arp -a                                   | Show the ARP table                                           |
-| /etc/resolv.conf                                             | Dns resolver   search localdomain (for fqdn) nameserver 192.168.82.2 (dns server) |
-| /etc/nsswitch.conf                                           | Config file that has been used to get the correct order in witch a dns server needs to search |
+| **Networking**                                               |                                                         |
+|--------------------------------------------------------------|---------------------------------------------------------|
+| nmcli                                                        |                                                         |
+| nmcli con add type ethernet con-name eth1 inflame enp0s3 ipv4 10.0.2.10/24 gw4 192.168.1.254 | Setting you IP address with the nmcli command                |
+| nmcli device wifi connect \<SSID> password \<password>       | Connecting to a wireless network with NMCLI             |
+| Nmcli con up \<connection name>                              | Enable a new connection with NMCLI                      |
+| nmcli con show                                               | Show if there is a Wifi module active                   |
+| nmcli device wifi list                                       | Show all the available networks                         |
+| nmcli device status                                          | display network interfaces                              |
+| Ip Route                                                     | Show default routes on your local host                  |
+| ethtool \<interface>                                         | Display ethernet settings                               |
+| iwconfig \<wlan device> essid “wlan name” key s:password     | Setting SSID for wireless interface                     |  | Ip address                                                   | Showing all the ip adresses for the interfaces          |
+| /etc/sysconfig/network-scripts                               | Config location for Red Hat systems                     |
+| Route add default gw 192.168.0.254                           | Set a default gateway on a host                         |
+| Ip neighbour show / arp -a                                   | Show the ARP table                                      |
+| /etc/resolv.conf                   | Dns resolver   search localdomain (for fqdn) nameserver 192.168.82.2 (dns server) |
+| /etc/nsswitch.conf     | Config file that has been used to get the correct order in witch a dns server needs to search |
+|nmcli con reload | reload connection after making changes |
 
-
-| **DHCP** |             |
+| **Configure hostname resolution** |             |
 | -------- | ----------- |
-| Dhclient | Dhcp client |
+|  getnet host       |                 |
+| hostname           |    print hostname             |
+| /etc/hostname      |   configure hostname         |
+| hostnamectl         |     refresh hostname       |
+| /etc/resolve.config      |    configure dns        |
+| nmcli con modify <wifi name> ipv4.dns "8.8.8.8" |  |
+|systemctl restart NetworkManager| |
+| /etc/hosts/       |   configure local dns      |
+
 
 | **Bonding NIC’s**                         | For load balancing, aggregation or active/pasive    |
 | ----------------------------------------- | --------------------------------------------------- |
@@ -59,5 +66,4 @@ Manage basic networking
 |                            |                                                              |
 | Ss -lt                     | Showing all the listening ports on the current system        |
 | Nmcli dev show \<NICname\> | Show status of a interface                                   |
-| Dhclient                   | Refresh the dhcp client to get a new ipaddress               |
 

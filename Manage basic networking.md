@@ -1,9 +1,8 @@
-Manage basic networking
+
 
 # Manage basic networking
 
  - Configure IPv4 and IPv6 addresses
--  
 -  Configure network services to start automatically at boot
 -  Restrict network access using firewall-cmd/firewall
 
@@ -18,7 +17,7 @@ Manage basic networking
 | nmcli device status                                          | display network interfaces                              |
 | Ip Route                                                     | Show default routes on your local host                  |
 | ethtool \<interface>                                         | Display ethernet settings                               |
-| iwconfig \<wlan device> essid “wlan name” key s:password     | Setting SSID for wireless interface                     |  | Ip address                                                   | Showing all the ip adresses for the interfaces          |
+| Ip address                                                   | Showing all the ip adresses for the interfaces          |
 | /etc/sysconfig/network-scripts                               | Config location for Red Hat systems                     |
 | Route add default gw 192.168.0.254                           | Set a default gateway on a host                         |
 | Ip neighbour show / arp -a                                   | Show the ARP table                                      |
@@ -28,7 +27,7 @@ Manage basic networking
 
 | **Configure hostname resolution** |             |
 | -------- | ----------- |
-|  getnet host       |                               |
+| Getent hosts       | Looking up all the hosts in the /etc/hosts file      |
 | hostname           |    print hostname             |
 | /etc/hostname      |   configure hostname          |
 | hostnamectl         |     refresh hostname         |
@@ -52,9 +51,8 @@ Manage basic networking
 | Ping6 fe80::c418:2ed0:aead:cbce%**enp0s3**   | When sending out packages of a link local address you must specify the outgoing interface! |
 | Tracepath 1.1.1.1                            | Tracing routes                                               |
 | Dig \<domain name>                           | Getting all the DNS adresses                                 |
-| Getent hosts                                 | Looking up all the hosts in the /etc/hosts file              |
 | ss                                      | Showing all the current open network connections             |
-| Ss -anpt                                     | Showing which system process are using which network sockets (currently) |
+| Ss -anpt                                    | Showing which system process are using which network sockets (currently) |
 | lsof -i                                      | Show open network ports                                      | 
 | Nc                                           | Netcat utility (reading and writing to or from a network port) |
 | Route del default or ip route del default    | Removing the default route (gateway)                         |
@@ -63,7 +61,6 @@ Manage basic networking
 | -------------------------- | ------------------------------------------------------------ |
 | Ip link show               | Show the link stat of all the interfaces                     |
 | Ip -s link show            | Show the current link statistics (packets sent, received etc.) |
-|                            |                                                              |
 | Ss -lt                     | Showing all the listening ports on the current system        |
 | Nmcli dev show \<NICname\> | Show status of a interface                                   |
 

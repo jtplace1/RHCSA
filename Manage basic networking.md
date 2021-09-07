@@ -13,7 +13,6 @@
 | nmcli device wifi connect \<SSID> password \<password>       | Connecting to a wireless network with NMCLI             |
 | Nmcli con up \<connection name>                              | Enable a new connection with NMCLI                      |
 | nmcli con show                                               | Show if there is a Wifi module active                   |
-| nmcli device wifi list                                       | Show all the available networks                         |
 | nmcli device status                                          | display network interfaces                              |
 | Ip Route                                                     | Show default routes on your local host                  |
 | ethtool \<interface>                                         | Display ethernet settings                               |

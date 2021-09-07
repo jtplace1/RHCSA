@@ -2,7 +2,7 @@ Manage Security
 
 # Manage Security
 
-- Create and use file access control lists
+- 
 - List and identify SELinux file and process context
 - Restore default file contexts
 - Use boolean settings to modify system SELinux settings
@@ -18,6 +18,17 @@ Manage Security
 | Systemctl status firewalld.service        | Show the status of the firewall Deamon                  |
 |firewall-cmd --get-zones                   | Get zones                                               |
 | firewall-cmd --list-all                   |                                                         |
+
+
+
+| **Create and use file access control lists**         |                                         |
+| ---------------------------------------------------- | --------------------------------------- |
+|          setfacl                            | List of all the ports                   |
+|            | Change the default http port to port 90 |
+|                                          |                                         |
+|  |                                         |
+|                       |                                         |
+|                                                      |                                         |
 
 
 

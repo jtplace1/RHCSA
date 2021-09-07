@@ -1,8 +1,7 @@
 Manage Security
 
 # Manage Security
-
-- 
+ 
 - List and identify SELinux file and process context
 - Restore default file contexts
 - Use boolean settings to modify system SELinux settings

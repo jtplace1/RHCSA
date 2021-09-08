@@ -37,22 +37,27 @@ Create and configure file systems
 
 |**Diagnose and correct file permission problems**||
 | ------------------------ | ------------------------------------------------------------ |
-| **Tune2fs**              |                                                              |
-| tune2fs -i 200 /dev/sda1 | Changing the interval in when the filesystem needs to be checked (ext2, ext3 and ext4) if you apply a 0 there will be no checks |
+|      getfacl        |                                                              |
+|  **setfacl** |                          |
+|   setfacl -m u:testuser:rwx filename   |         add ACL permissions for user                                |
+|     setfacl -x u:testuser file        |                     remove ACL persmissions for user                       |
+|    setfacl -b filename              |                       remove all ACL permissions                       |
+|   setfacl -d -m u:testuser:rwx directory | add defualt ALC permissions to new file created for that user        |
+|   setfacl -k directory        |         remove default ACL on directory                            |
+|   getfacl file1 | setfacl --set-file=- file2 |          copy the ACL permissions of one file to another                      |
 
 
-| **- Mount and unmount network file systems using NFS**                                       |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Show mount -e \<IP address of the server\>                   | Showing witch directories are available to make a connection to |
-| mount 192.168.82.132:/var/share /var/share                   | Mounting the share                                           |
-| 192.168.82.132:/var/share	/var/share/	nfs	defaults	0 0 | Add this row to the /etc/fstab/                              |
-| Umount /var/share                                            | Unmount the share on the client                              |
-| mount                                                        | Show all the current mounts                                  |
-| **AutoFS NFS Share**                                         |                                                              |
-| Yum install autofs                                           |                                                              |
-| Systemctl enable —now autofs                                 |                                                              |
-|  | Vi /etc/auto.master                                          |
-|| Vi /etc/auto.home                                            |
+| **Mount and unmount network file systems using NFS**    |                                                       |
+| --------------------------------------------------------| ----------------------------------------------------- |
+| Show mount -e \<IP address of the server\>       | Showing witch directories are available to make a connection to |
+| mount 192.168.82.132:/var/share /var/share                   | Mounting the share                                 |
+| 192.168.82.132:/var/share	/var/share/	nfs	defaults	0 0 | Add this row to the /etc/fstab/                          |
+| Umount /var/share                                            | Unmount the share on the client                     |
+| mount                                                        | Show all the current mounts                        |
+| **AutoFS NFS Share**                                         |                                                  |
+| Yum install autofs                                           |                                                 |
+| Systemctl enable —now autofs                                 |                                                    |
+| Vi /etc/auto.master                                        |                                             |        |Vi /etc/auto.home                                            |                                                      |
 
 
 | **Extend existing logical volumes**                  |                                |

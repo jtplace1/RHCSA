@@ -2,7 +2,7 @@ Create and configure file systems
 
 
 # Create and configure file systems
-- Create and configure set-GID directories for collaboration
+- 
 - Configure disk compression
 - Manage layered storage
 
@@ -37,7 +37,7 @@ Create and configure file systems
 
 |**Diagnose and correct file permission problems**||
 | ------------------------ | ------------------------------------------------------------ |
-|      getfacl        |                                                              |
+|      getfacl  filename      |           prints permissions of a file                                            |
 |  **setfacl** |                          |
 |   setfacl -m u:testuser:rwx filename   |         add ACL permissions for user                                |
 |     setfacl -x u:testuser file        |                     remove ACL persmissions for user                       |
@@ -45,6 +45,13 @@ Create and configure file systems
 |   setfacl -d -m u:testuser:rwx directory | add defualt ALC permissions to new file created for that user        |
 |   setfacl -k directory        |         remove default ACL on directory                            |
 |   getfacl file1 \| setfacl --set-file=- file2 |          copy the ACL permissions of one file to another             |
+
+
+**Create and configure set-GID directories for collaboration**|                     |
+| ------------------------ | ------------------------------------------------------------ |
+|      getfacl  filename      |           prints permissions of a file                                            |
+|  **setfacl** |                          |
+
 
 
 | **Mount and unmount network file systems using NFS**    |                                                       |

@@ -44,7 +44,7 @@ Create and configure file systems
 |    setfacl -b filename              |                       remove all ACL permissions                       |
 |   setfacl -d -m u:testuser:rwx directory | add defualt ALC permissions to new file created for that user        |
 |   setfacl -k directory        |         remove default ACL on directory                            |
-|   getfacl file1 \|\ setfacl --set-file=- file2 |          copy the ACL permissions of one file to another             |
+|   getfacl file1 \| setfacl --set-file=- file2 |          copy the ACL permissions of one file to another             |
 
 
 | **Mount and unmount network file systems using NFS**    |                                                       |

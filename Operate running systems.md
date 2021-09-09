@@ -18,8 +18,11 @@ Operate running systems
 | **Grub**                               |                                                              |
 | -------------------------------------- | ------------------------------------------------------------ |
 | Boot legacy                            | Location: /boot/grub/menu.lst                                |
-| Grub2                                  | Location: /boot/grub2/grub.cfg (BIOS) Location: /boot/efi/EFI/distro-name/grub.cfg (UEFI) |
-|                                        |                                                              |
+| Grub2                     | Location: /boot/grub2/grub.cfg (BIOS) Location: /boot/efi/EFI/distro-name/grub.cfg (UEFI) |
+|            search.file /grub2/grub.cfg       |                                                              |
+|            insmod lvm                  |                                                              |
+
+|            insmod lvm                  |                                                              |
 | /etc/default/grub                      | Changing settings for grub                                   |
 | Grub2-mkconfig -o /boot/grub2/grub.cfg | Making a config for grub2                                    |
 
@@ -42,13 +45,13 @@ Get information about the usage of virtual memory:
 Root 
 
 
-| **Root password reset:**                                     |                                                              |
-| ------------------------------------------------------------ | ------------------------------------------------------------ |
-| Press “e” on boot menu                                       |                                                              |
+| **Root password reset:**                                     |                                                   |
+| ----------------------------------------------------------- |-------------------------------------------------- |
+| Press “e” on boot menu                                     |                                                     |
 | Add rd.break to the linux line  | The rd.break parameter interrupts the boot process before the control is passed over to the kernel. |
-| Cntrl x<br />![image-20210123122022764](images/RHCSA8_notes/image-20210123122022764.png) |                                                              |
-|                                                              |                                                              |
-|                                                              |                                                              |
+| Cntrl x                                                 |                                                       |
+|                                                              |                         |
+|                                                              |                          |
 
 
 

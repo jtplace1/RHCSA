@@ -2,7 +2,6 @@ Create and configure file systems
 
 
 # Create and configure file systems
-- 
 - Configure disk compression
 - Manage layered storage
 
@@ -56,7 +55,7 @@ Create and configure file systems
 
 | **Mount and unmount network file systems using NFS**    |                                                       |
 | --------------------------------------------------------| ----------------------------------------------------- |
-| Show mount -e \<IP address of the server\>       | Showing witch directories are available to make a connection to |
+| showmount -e \<IP address of the server\>       | Showing witch directories are available to make a connection to |
 | mount 192.168.82.132:/var/share /var/share                   | Mounting the share                                 |
 | 192.168.82.132:/var/share	/var/share/	nfs	defaults	0 0 | Add this row to the /etc/fstab/                          |
 | Umount /var/share                                            | Unmount the share on the client                     |
